@@ -11,4 +11,5 @@ const JimWendlerProgramLoad = [week1, week2, week3, week4];
 
 const use90PercentAsDefaultMaxWeight = (maxWeight: number) => roundToFive(Math.round(maxWeight * 0.9));
 
-export const JimWendlerProgram = (maxWeight: number) => defaultProgram(use90PercentAsDefaultMaxWeight(maxWeight), JimWendlerProgramLoad);
+export const JimWendlerProgram = (maxWeight: number) =>
+  defaultProgram(use90PercentAsDefaultMaxWeight(maxWeight), JimWendlerProgramLoad);

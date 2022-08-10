@@ -18,11 +18,11 @@ describe('defaultProgram', () => {
     expect(w2[0].weight).toBe(200);
     expect(w2[1].weight).toBe(230);
     expect(w2[2].weight).toBe(255);
-    
+
     expect(w3[0].weight).toBe(215);
     expect(w3[1].weight).toBe(240);
     expect(w3[2].weight).toBe(270);
-    
+
     expect(w4[0].weight).toBe(115);
     expect(w4[1].weight).toBe(145);
     expect(w4[2].weight).toBe(170);
