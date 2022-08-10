@@ -1,69 +1,105 @@
-<p align="center">
- <img width="100px" src="https://raw.githubusercontent.com/hebertcisco/ts-npm-package-boilerplate/main/.github/images/favicon512x512-npm.png" align="center" alt=":package: ts-npm-package-boilerplate" />
- <h2 align="center">:package: ts-npm-package-boilerplate</h2>
- <p align="center">TypeScript NPM Module Boilerplate</p>
-  <p align="center">
-    <a href="https://github.com/hebertcisco/ts-npm-package-boilerplate/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/hebertcisco/ts-npm-package-boilerplate?style=flat&color=336791" />
-    </a>
-    <a href="https://github.com/hebertcisco/ts-npm-package-boilerplate/pulls">
-      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/hebertcisco/ts-npm-package-boilerplate?style=flat&color=336791" />
-    </a>
-     <a href="https://github.com/hebertcisco/ts-npm-package-boilerplate">
-      <img alt="GitHub Downloads" src="https://img.shields.io/npm/dw/ts-npm-package-boilerplate?style=flat&color=336791" />
-    </a>
-    <a href="https://github.com/hebertcisco/ts-npm-package-boilerplate">
-      <img alt="GitHub Total Downloads" src="https://img.shields.io/npm/dt/ts-npm-package-boilerplate?color=336791&label=Total%20downloads" />
-    </a>
- <a href="https://github.com/hebertcisco/ts-npm-package-boilerplate">
-      <img alt="GitHub release" src="https://img.shields.io/github/release/hebertcisco/ts-npm-package-boilerplate.svg?style=flat&color=336791" />
-    </a>
-    <br />
-    <br />
-  <a href="https://github.com/hebertcisco/ts-npm-package-boilerplate/issues/new/choose">Report Bug</a>
-  <a href="https://github.com/hebertcisco/ts-npm-package-boilerplate/issues/new/choose">Request Feature</a>
-  </p>
- <h3 align="center">Systems on which it has been tested:</h3>
- <p align="center">
-   <a href="https://www.apple.com/br/macos/">
-      <img alt="Macos" src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white&style=flat" />
-    </a>
-    <a href="https://ubuntu.com/download">
-      <img alt="Ubuntu" src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white&style=flat" />
-    </a>
-    <a href="https://www.microsoft.com/pt-br/windows/">
-      <img alt="Windows" src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white&style=flat" />
-    </a>
-  </p>
-<p align="center">Did you like the project? Please, considerate <a href="https://www.buymeacoffee.com/hebertcisco">a donation</a> to help improve!</p>
+# Inspiration
 
-<p align="center"><strong>TypeScript NPM Module Boilerplate</strong>✨</p>
+This package is inspired by the Jim Wendler training program. Unfortunately I couldn't find a solution and wrote my own version.
 
+https://www.t-nation.com/workouts/5-3-1-how-to-build-pure-strength/
 
 # Getting started
 
-## Installation
-
-> Clone this repository: `git clone https://github.com/hebertcisco/ts-npm-package-boilerplate`
-
-### Open the directory and run the script line:
+### Install Package
 
 ```bash
-cd ts-npm-package-boilerplate 
+npm i jim-wendler-program
 ```
-```bash
-npm i  # or yarn
-```
-```bash
-rm -rf .git && git init && git add . && git commit -m "Initial commit" #Optional
-```
-Or create use the button "Use this template"
 
-Edit the Icon on Figma:
+```bash
+yarn add jim-wendler-program
+```
 
-<a href="https://www.figma.com/file/vpevGX3j9tmtW8OyLQ9eUm/ts-npm-package-boilerplate-icon?node-id=0%3A1">
-   <img alt="Figma Icon" src="https://raw.githubusercontent.com/hebertcisco/ts-npm-package-boilerplate/main/.github/images/figma-badge.png"/>
-</a>
+### Usage Jim Welder Program
+
+```TypeScript
+// Original Jim Wendler Program with 315 punds as max lift weight
+import { JimWendlerProgram } from 'jim-wendler-program'
+
+const myMaxWeight = 315; // kg for example, but you can use pounds or anything else
+const myProgram = new JimWendlerProgram(myMaxWeight);
+
+// For more information see this article:
+// https://www.t-nation.com/workouts/5-3-1-how-to-build-pure-strength/
+// console.log
+  [
+    [
+      { weight: 185, reps: '5' },
+      { weight: 215, reps: '5' },
+      { weight: 240, reps: '5+' }
+    ],
+    [
+      { weight: 200, reps: '3' },
+      { weight: 230, reps: '3' },
+      { weight: 255, reps: '3+' }
+    ],
+    [
+      { weight: 215, reps: '5' },
+      { weight: 240, reps: '3' },
+      { weight: 270, reps: '1+' }
+    ],
+    [
+      { weight: 115, reps: '5' },
+      { weight: 145, reps: '5' },
+      { weight: 170, reps: '5+' }
+    ]
+  ]
+
+```
+
+## Create your own Program
+
+```bash
+git clone https://github.com/ts-ign0re/jim-wendler-program.git
+```
+
+```TypeScript
+
+import { defaultProgram } from 'jim-wendler-program'
+
+// load - load in percentage of max lift weight for every set
+// load.length = number of sets
+// reps - number of reps per every set
+// reps.length should be the same as load.length
+const week1 = { load: [0.65, 0.75, 0.85], reps: ['5', '5', '5+'] };
+const week2 = { load: [0.7, 0.8, 0.9], reps: ['3', '3', '3+'] };
+const week3 = { load: [0.75, 0.85, 0.95], reps: ['5', '3', '1+'] };
+const week4 = { load: [0.4, 0.5, 0.6], reps: ['5', '5', '5+'] };
+
+const myCustomProgramScheme = [week1, week2, week3, week4];
+const myLiftWeight = 100;
+const myCustomProgram = defaultProgram(myLiftWeight, myCustomProgramScheme);
+
+// console.log
+[
+  [
+    { weight: 65, reps: '5' },
+    { weight: 75, reps: '5' },
+    { weight: 85, reps: '5+' }
+  ],
+  [
+    { weight: 70, reps: '3' },
+    { weight: 80, reps: '3' },
+    { weight: 90, reps: '3+' }
+  ],
+  [
+    { weight: 75, reps: '5' },
+    { weight: 85, reps: '3' },
+    { weight: 95, reps: '1+' }
+  ],
+  [
+    { weight: 40, reps: '5' },
+    { weight: 50, reps: '5' },
+    { weight: 60, reps: '5+' }
+  ]
+]
+```
 
 ## 🤝 Contributing
 
@@ -75,13 +111,11 @@ Give a ⭐️ if this project helped you!
 
 Or buy me a coffee 🙌🏾
 
-<a href="https://www.buymeacoffee.com/hebertcisco">
+<a href="https://www.buymeacoffee.com/tronin">
     <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=hebertcisco&button_colour=FFDD00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" />
 </a>
 
-[![codecov](https://codecov.io/gh/hebertcisco/ts-npm-package-boilerplate/branch/main/graph/badge.svg?token=Q9fr548J0D)](https://codecov.io/gh/hebertcisco/ts-npm-package-boilerplate)
-
 ## 📝 License
 
-Copyright © 2022 [Hebert F Barros](https://github.com/hebertcisco).<br />
+Copyright © 2022 [Tronin Denis](https://github.com/ts-ign0re).<br />
 This project is [MIT](LICENSE) licensed.

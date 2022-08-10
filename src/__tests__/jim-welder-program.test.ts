@@ -1,11 +1,11 @@
-import { JimWelderProgram } from '../jim-welder-program';
+import { JimWendlerProgram } from '../jim-wendler-program';
 
-describe('JimWelderProgram', () => {
+describe('JimWendlerProgram', () => {
   test('should return calculated load', () => {
     // 315 pounds
-    expect(JimWelderProgram(315)[0][0].weight).toBe(185);
+    expect(JimWendlerProgram(315)[0][0].weight).toBe(185);
 
     // 100kg
-    expect(JimWelderProgram(100)[0][0].weight).toBe(60);
+    expect(JimWendlerProgram(100)[0][0].weight).toBe(60);
   });
 });
