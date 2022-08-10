@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/ts-ign0re/jim-wendler-program/branch/main/graph/badge.svg?token=R7681VR5YP)](https://codecov.io/gh/ts-ign0re/jim-wendler-program)
+
 # Inspiration
 
 This package is inspired by the Jim Wendler training program. Unfortunately I couldn't find a solution and wrote my own version.
