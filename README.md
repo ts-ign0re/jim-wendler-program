@@ -112,7 +112,7 @@ Give a ⭐️ if this project helped you!
 Or buy me a coffee 🙌🏾
 
 <a href="https://www.buymeacoffee.com/tronin">
-    <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=hebertcisco&button_colour=FFDD00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" />
+    <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=tronin&button_colour=FFDD00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" />
 </a>
 
 ## 📝 License

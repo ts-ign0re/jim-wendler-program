@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hebertcisco/ts-npm-package-boilerplate.git"
+    "url": "git+https://github.com/ts-ign0re/jim-wendler-program.git"
   },
   "keywords": [
     "boilerplate",
@@ -29,9 +29,9 @@
   "author": "Hebert Cisco",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hebertcisco/ts-npm-package-boilerplate/issues"
+    "url": "https://github.com/ts-ign0re/jim-wendler-program/issues"
   },
-  "homepage": "https://github.com/hebertcisco/ts-npm-package-boilerplate#readme",
+  "homepage": "https://github.com/ts-ign0re/jim-wendler-program#readme",
   "devDependencies": {
     "@types/jest": "28.1.6",
     "@typescript-eslint/eslint-plugin": "5.30.7",
