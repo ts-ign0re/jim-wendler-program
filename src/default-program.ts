@@ -7,7 +7,7 @@ export type ProgramScheme = Array<{
 export type Program = { weight: number };
 export type ProgramSchedule = Program[][];
 
-export function defaultProgram(maxWeight: number, programScheme: ProgramScheme) {
+export function defaultProgram(maxWeight: number, programScheme: ProgramScheme): ProgramSchedule {
   if (!Array.isArray(programScheme)) {
     throw new Error('programScheme must be an array');
   }
