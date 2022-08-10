@@ -27,4 +27,19 @@ describe('defaultProgram', () => {
     expect(w4[1].weight).toBe(145);
     expect(w4[2].weight).toBe(170);
   });
+
+  test('should return error', () => {
+    expect(() => defaultProgram(0, jim_wendler_program)).toThrow();
+    // @ts-expect-error - this is a test
+    expect(() => defaultProgram(undefined, jim_wendler_program)).toThrow();
+    // @ts-expect-error - this is a test
+    expect(() => defaultProgram(null, jim_wendler_program)).toThrow();
+    
+    // program
+    expect(() => defaultProgram(0, [])).toThrow();
+    // @ts-expect-error - this is a test
+    expect(() => defaultProgram(0, undefined)).toThrow();
+    // @ts-expect-error - this is a test
+    expect(() => defaultProgram(0, null)).toThrow();
+  });
 });
