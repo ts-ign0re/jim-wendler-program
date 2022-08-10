@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/ts-ign0re/jim-wendler-program/branch/main/graph/badge.svg?token=R7681VR5YP)](https://codecov.io/gh/ts-ign0re/jim-wendler-program)
+[![codecov](https://codecov.io/gh/ts-ign0re/jim-wendler-program/branch/master/graph/badge.svg?token=R7681VR5YP)](https://codecov.io/gh/ts-ign0re/jim-wendler-program)
 
 # Inspiration
 
