@@ -1,7 +1,7 @@
 {
-  "name": "ts-npm-package-boilerplate",
-  "version": "0.1.6",
-  "description": "TypeScript NPM Module Boilerplate",
+  "name": "jim-wendler-program",
+  "version": "0.1.0",
+  "description": "Jim Welder Powerlifting Program Algorithm",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -10,6 +10,8 @@
     "lint": "eslint src --ext .js,.ts",
     "lint:fix": "eslint src --fix --ext .js,.ts",
     "test": "jest --config jest.config.js",
+    "test:watch": "jest --config jest.config.js --watch",
+    "test:coverage": "jest --config jest.config.js --coverage",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
