@@ -34,7 +34,7 @@ describe('defaultProgram', () => {
     expect(() => defaultProgram(undefined, jim_wendler_program)).toThrow();
     // @ts-expect-error - this is a test
     expect(() => defaultProgram(null, jim_wendler_program)).toThrow();
-    
+
     // program
     expect(() => defaultProgram(0, [])).toThrow();
     // @ts-expect-error - this is a test
