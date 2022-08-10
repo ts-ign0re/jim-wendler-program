@@ -16,7 +16,7 @@ npm i jim-wendler-program
 yarn add jim-wendler-program
 ```
 
-### Usage Jim Welder Program
+### Usage Jim Wendler Program
 
 ```TypeScript
 // Original Jim Wendler Program with 315 punds as max lift weight

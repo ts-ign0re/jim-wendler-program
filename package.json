@@ -1,7 +1,7 @@
 {
   "name": "jim-wendler-program",
   "version": "0.1.0",
-  "description": "Jim Welder Powerlifting Program Algorithm",
+  "description": "Jim Wendler Powerlifting Program Algorithm",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {

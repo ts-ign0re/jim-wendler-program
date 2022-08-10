@@ -6,9 +6,9 @@ describe('defaultProgram', () => {
   const week3 = { load: [0.75, 0.85, 0.95], reps: ['5', '3', '1+'] };
   const week4 = { load: [0.4, 0.5, 0.6], reps: ['5', '5', '5+'] };
 
-  const jim_welder_program = [week1, week2, week3, week4];
+  const jim_wendler_program = [week1, week2, week3, week4];
   test('should return calculated load', () => {
-    const [w1, w2, w3, w4] = defaultProgram(285, jim_welder_program);
+    const [w1, w2, w3, w4] = defaultProgram(285, jim_wendler_program);
     expect(w1[0].weight).toBe(185);
     expect(w1[0].reps).toBe('5');
     expect(w1[1].weight).toBe(215);
