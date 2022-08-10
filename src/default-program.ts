@@ -4,7 +4,7 @@ export type ProgramScheme = Array<{
   load: number[];
   reps: string[];
 }>;
-export type Program = { weight: number };
+export type Program = { weight: number, reps: string };
 export type ProgramSchedule = Program[][];
 
 export function defaultProgram(maxWeight: number, programScheme: ProgramScheme): ProgramSchedule {
